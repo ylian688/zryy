@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .resume-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2.2em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 1.6em;
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            border-left: 5px solid #3498db;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            width: 15%;
+            font-weight: bold;
+        }
+        .fixed-value {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+            height: 120px;
+            resize: vertical;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+        .photo-preview {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        .skills-list {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .skills-list li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .project-item, .evaluation-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .project-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .resume-container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            table {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h1>个人简历</h1>
+        
+        <div class="section">
+            <h2>基本信息</h2>
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <td class="fixed-value">周政涟</td>
+                    <th>性别</th>
+                    <td class="fixed-value">男</td>
+                    <th>年龄</th>
+                    <td class="fixed-value">19</td>
+                    <td rowspan="4" class="photo-container">
+                        <!-- 直接嵌入照片 -->
+                        <img src="0.jpg" class="photo-preview" alt="个人照片">
+                    </td>
+                </tr>
+                <tr>
+                    <th>籍贯</th>
+                    <td class="fixed-value">枣庄市</td>
+                    <th>联系电话</th>
+                    <td class="fixed-value">17263200763</td>
+                    <th>电子邮箱</th>
+                    <td class="fixed-value">1375980784@qq.com</td>
+                </tr>
+                <tr>
+                    <th>学历</th>
+                    <td class="fixed-value">高中</td>
+                    <th>健康状况</th>
+                    <td class="fixed-value">良好</td>
+                    <th>婚姻状况</th>
+                    <td class="fixed-value">未婚</td>
+                </tr>
+                <tr>
+                    <th>求职意向</th>
+                    <td class="fixed-value">前端开发</td>
+                    <th>专业</th>
+                    <td class="fixed-value">软件工程</td>
+                    <th>毕业院校</th>
+                    <td class="fixed-value">鲁东大学</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>技能证书</h2>
+            <h3>个人特长与爱好</h3>
+            <ul class="skills-list">
+                <li>Java编程（精通）</li>
+                <li>Python开发（熟练）</li>
+                <li>Web前端开发（HTML/CSS/JavaScript）</li>
+                <li>数据库管理（MySQL/Oracle）</li>
+                <li>摄影（业余爱好）</li>
+                <li>篮球（校队成员）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>项目经历</h2>
+            <div class="project-item">
+                <div class="project-title">电商平台开发（2020-2022）</div>
+                <textarea readonly>
+• 负责后端API设计和开发，使用Spring Boot框架
+• 实现用户认证和授权系统
+• 开发商品管理和订单处理模块
+• 优化数据库查询，性能提升40%
+• 项目获得公司年度最佳项目奖
+                </textarea>
+            </div>
+            <div class="project-item">
+                <div class="project-title">企业ERP系统（2018-2020）</div>
+                <textarea readonly>
+• 参与系统需求分析和设计
+• 开发财务模块和库存管理模块
+• 实现数据报表生成功能
+• 协助团队完成系统测试和部署
+• 系统已在3家分公司成功上线
+                </textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>自我评价</h2>
+            <div class="evaluation-item">
+                <textarea readonly>
+• 5年Java开发经验，扎实的编程基础
+• 熟悉主流开发框架和设计模式
+• 良好的团队协作能力和沟通能力
+• 热爱技术，持续学习新技术
+• 工作认真负责，能承受压力
+                </textarea>
+            </div>
+            <div class="evaluation-item">
+                <textarea readonly>
+• 希望加入技术领先的互联网公司
+• 从事后端开发或全栈开发工作
+• 期待在挑战中不断提升自己
+• 长期目标是成为技术专家
+                </textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
